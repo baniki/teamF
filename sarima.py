@@ -9,7 +9,7 @@ import re
 
 # -*- coding: utf-8 -*-
 #csvファイルの指定
-df = pd.read_csv('/Users/hiro/Desktop/teamF/app/after_scrape_results.csv')
+df = pd.read_csv('app/after_scrape_results.csv')
 
 #データを整形
 #価格を抽出

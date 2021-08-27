@@ -40,7 +40,7 @@ def get_html(url):
 
 
 item_urls = []
-for _ in range(2):
+for _ in range(1):
     response = get_html(url)
     soup_result = bs(response.content, "html.parser")
     item_urls += [item.find(class_="Product__titleLink").get("href") for item in soup_result.findAll(class_="Product")]
@@ -123,5 +123,3 @@ df.to_csv('after_scrape_results.csv')
 sleep(10)
 
 driver.quit()
-
-import sarima
